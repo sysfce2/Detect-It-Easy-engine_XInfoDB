@@ -89,7 +89,7 @@ void XInfoDB::setDevice(QIODevice *pDevice, XBinary::FT fileType)
 #ifndef QT_DEBUG
     g_dataBase.setDatabaseName(":memory:");
 #else
-    g_dataBase.setDatabaseName("C:\\tmp_build\\local_db.db");
+    g_dataBase.setDatabaseName("local_db.db");
 #endif
 
     if (g_dataBase.open()) {
